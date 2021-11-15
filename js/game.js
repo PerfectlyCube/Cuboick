@@ -1,7 +1,7 @@
 const canvas = document.createElement("canvas");
 
-const width = window.innerWidth-100;
-const height = window.innerHeight-100;
+const width = 800;
+const height = 600;
 
 canvas.setAttribute("width", width);
 canvas.setAttribute("height", height);
