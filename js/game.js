@@ -1,4 +1,4 @@
-const canvas = document.createElement(HTMLCanvasElement);
+const canvas = document.createElement("canvas");
 
 const width = window.innerWidth;
 const height = window.innerHeight;
