@@ -1,7 +1,7 @@
 const canvas = document.createElement("canvas");
 
-const width = window.innerWidth;
-const height = window.innerHeight;
+const width = window.innerWidth-100;
+const height = window.innerHeight-100;
 
 canvas.setAttribute("width", width);
 canvas.setAttribute("height", height);
@@ -14,7 +14,7 @@ function loop() {
     g.fillStyle = "#dfdfdf";
     g.fillRect(0, 0, width, height);
     
-    drawCube(1, 1, "000000");
+    drawCube(100, 100, "000000");
 
 }
 
