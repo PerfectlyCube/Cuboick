@@ -14,7 +14,7 @@ function loop() {
     g.fillStyle = "#dfdfdf";
     g.fillRect(0, 0, width, height);
     
-    drawCube(1, 1);
+    drawCube(1, 1, "000000");
 
 }
 
