@@ -22,5 +22,6 @@ export function drawTile(x, y, color, g) {
     g.lineTo(50 + x, 25 + y);
     g.lineTo(0 + x, 25 + y);
     g.lineTo(25 + x, 25 + y);
+    g.fill();
 
 }

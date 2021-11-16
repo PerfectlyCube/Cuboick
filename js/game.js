@@ -7,11 +7,13 @@ let x = 0, y = 0, z = 0;
 
 const canvas = document.createElement("canvas");
 
-const width = window.innerWidth - 800/8;
-const height = window.innerHeight - 600/8;
+const width = window.innerWidth - 800/12;
+const height = window.innerHeight - 600/12;
 
+canvas.setAttribute("id", "screen");
 canvas.setAttribute("width", width);
 canvas.setAttribute("height", height);
+
 document.body.append(canvas);
 
 const g = canvas.getContext('2d');
@@ -27,8 +29,8 @@ function loop() {
     g.fillStyle = "#dfdfdf";
     g.fillRect(0, 0, width, height);
 
-    drawCube(x - z, y + z, "454545");
-    drawTile(x - z, y + z, "909090");
+    drawCube(x - z, y + z, "454545", g);
+    drawTile(x - z, y + z, "909090", g);
 
 }
 
