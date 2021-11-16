@@ -6,9 +6,9 @@ function reset() {
 
 }
 
-export function hasTimeElasped(time, reset) {
+export function hasTimeElasped(delay, reset) {
 
-    if(this.time - lastTime > time) {
+    if(time - lastTime > delay) {
 
         if(reset)
             reset();
