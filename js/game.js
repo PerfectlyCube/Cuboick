@@ -1,5 +1,5 @@
 import { up, down, left, right } from "./input.js";
-import { hasTimeElasped } from "./util/clock.js";
+import { reset, hasTimeElasped } from "./util/clock.js";
 
 let forward, strafe;
 let x = 100, y = 0, z = 100;

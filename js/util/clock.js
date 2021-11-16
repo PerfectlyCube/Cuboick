@@ -1,6 +1,6 @@
 let time = 0, lastTime = 0;
 
-function reset() {
+export function reset() {
 
     lastTime = time;
 
