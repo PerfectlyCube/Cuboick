@@ -1,1 +1,3 @@
-# cuboick.github.io
+# Cuboick
+
+A cubic puzzle.
