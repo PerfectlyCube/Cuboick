@@ -21,7 +21,7 @@ const g = canvas.getContext('2d');
 
 function loop() {
 
-    forward = ((up || down || createButton(10, height - 30, 20, 20, ["252525", "666666"])) && hasTimeElasped(1000/50, true)? (up? -1 : (down? 1 : 0)) : 0);
+    forward = ((up || downu) && hasTimeElasped(1000/50, true)? (up? -1 : (down? 1 : 0)) : 0);
     strafe = ((left || right) && hasTimeElasped(1000/50, true)? (left? -1 : (right? 1 : 0)) : 0);
 
     z += forward * 25;
