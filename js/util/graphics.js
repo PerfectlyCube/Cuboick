@@ -1,6 +1,6 @@
-const g = document.getElementById("screen").getContext('2d');
+export function drawCube(x, y, color, canvas) {
 
-export function drawCube(x, y, color) {
+    var g = canvas.getContext('2d');
 
 	g.fillStyle = "#" + color;
   
@@ -16,7 +16,9 @@ export function drawCube(x, y, color) {
 
 }
 
-export function drawTile(x, y, color) {
+export function drawTile(x, y, color, canvas) {
+
+    var g = canvas.getContext('2d');
 
     g.beginPath();
     g.moveTo(25 + x, 0 + y);
