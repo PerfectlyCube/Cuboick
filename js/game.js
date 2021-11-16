@@ -20,8 +20,8 @@ const g = canvas.getContext('2d');
 
 function loop() {
 
-    forward = ((up || down) && hasTimeElasped(1000/75, true)? (up? -1 : (down? 1 : 0)) : 0);
-    strafe = ((left || right) && hasTimeElasped(1000/75, true)? (left? -1 : (right? 1 : 0)) : 0);
+    forward = ((up || down) && hasTimeElasped(1000/50, true)? (up? -1 : (down? 1 : 0)) : 0);
+    strafe = ((left || right) && hasTimeElasped(1000/50, true)? (left? -1 : (right? 1 : 0)) : 0);
 
     z += forward * 25;
     x += strafe * 50;

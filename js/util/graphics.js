@@ -22,6 +22,8 @@ export function drawTile(x, y, color, canvas) {
 
     var g = canvas.getContext('2d');
 
+    g.fillStyle = "#" + color;
+
     g.beginPath();
     g.moveTo(25 + x, 0 + y);
     g.lineTo(75 + x, 0 + y);
