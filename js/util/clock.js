@@ -1,17 +1,11 @@
 let time = 0, lastTime = 0;
 
-export function reset() {
-
-    lastTime = time;
-
-}
-
 export function hasTimeElasped(delay, reset) {
 
     if(time - lastTime > delay) {
 
         if(reset)
-            reset();
+            lastTime = time;
 
         return true;
 
