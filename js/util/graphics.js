@@ -1,4 +1,6 @@
-export function drawCube(x, y, color, g) {
+const g = document.getElementById("screen");
+
+export function drawCube(x, y, color) {
 
 	g.fillStyle = "#" + color;
   
@@ -14,7 +16,7 @@ export function drawCube(x, y, color, g) {
 
 }
 
-export function drawTile(x, y, color, g) {
+export function drawTile(x, y, color) {
 
     g.beginPath();
     g.moveTo(25 + x, 0 + y);

@@ -29,8 +29,8 @@ function loop() {
     g.fillStyle = "#dfdfdf";
     g.fillRect(0, 0, width, height);
 
-    drawCube(x - z, y + z, "454545", g);
-    drawTile(x - z, y + z, "909090", g);
+    drawCube(x - z, y + z, "454545");
+    drawTile(x - z, y + z, "909090");
 
 }
 
