@@ -16,5 +16,5 @@ function keyinput(toggle, e) {
 
 }
 
-addEventListener("keydown", keyinput(true, e));
-addEventListener("keyup", keyinput(false, e));
+addEventListener("keydown", (e) => { keyinput(true, e) });
+addEventListener("keyup", (e) => { keyinput(false, e) });
