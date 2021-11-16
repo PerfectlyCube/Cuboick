@@ -1,5 +1,7 @@
 export let up, down, left, right;
 
+export let mX, mY, mouseDown;
+
 function keyinput(toggle, e) {
 
     if(e.key === 'ArrowUp')
@@ -16,5 +18,21 @@ function keyinput(toggle, e) {
 
 }
 
+function mouseinput(toggle, e) {
+
+    if(toggle) {
+
+        mX = e.clientX();
+        mY = e.clientY();
+
+    }
+
+    mouseDown = toggle;
+
+}
+
 addEventListener("keydown", (e) => { keyinput(true, e) });
 addEventListener("keyup", (e) => { keyinput(false, e) });
+
+addEventListener("mousedown",(e) => { mouseinput(true, e) });
+addEventListener("mouseup", (e) => { mouseinput(false, e) });

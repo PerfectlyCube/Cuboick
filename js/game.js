@@ -1,6 +1,7 @@
 import { up, down, left, right } from "./input.js";
 import { hasTimeElasped } from "./util/clock.js";
 import { drawCube, drawTile } from "./util/graphics.js";
+import { createButton } from "./util/button.js";
 
 let forward, strafe;
 let x = 0, y = 0, z = 0;
@@ -31,6 +32,8 @@ function loop() {
 
     drawTile(50, 50, "909090", canvas);
     drawCube(x - z, y + z, "454545", canvas);
+
+    if()
 
 }
 

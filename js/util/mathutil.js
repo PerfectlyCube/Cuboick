@@ -27,3 +27,33 @@ export function cos(degrees) {
     return Math.cos(toRadians(degrees));
 
 }
+
+export class Vec3 {
+
+    constructor(x, y, z) {
+
+        this.x = x;
+        this.y = y;
+        this.z = z;
+
+    }
+
+    get getX() {
+
+        return this.x;
+
+    }
+
+    get getY() {
+
+        return this.y;
+
+    }
+
+    get getZ() {
+
+        return this.z;
+
+    }
+
+}
