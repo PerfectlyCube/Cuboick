@@ -1,5 +1,6 @@
 import { up, down, left, right } from "./input.js";
 import { hasTimeElasped } from "./util/clock.js";
+import { drawCube, drawTile } from "./util/graphics.js";
 
 let forward, strafe;
 let x = 0, y = 0, z = 0;
@@ -27,22 +28,7 @@ function loop() {
     g.fillRect(0, 0, width, height);
 
     drawCube(x - z, y + z, "454545");
-
-}
-
-function drawCube(x, y, color) {
-
-	g.fillStyle = "#" + color;
-  
-	g.beginPath();
-  g.moveTo(25 + x, 25 - 25 + y);
-  g.lineTo(75 + x, 25 - 25 + y);
-  g.lineTo(75 + x, 75 - 25 + y);
-  g.lineTo(50 + x, 100 - 25 + y);
-  g.lineTo(0 + x, 100 - 25 + y);
-  g.lineTo(0 + x, 50 - 25 + y);
-  g.lineTo(25 + x, 25 - 25 + y);
-  g.fill();
+    drawTile(x - z, y + z, "909090");
 
 }
 
