@@ -1,4 +1,4 @@
-import { mouseDown, mX, mY } from "../input"
+import { mouseDown, mX, mY } from "../input.js"
 
 export function createButton(x, y, width, height, colors, canvas) {
 
