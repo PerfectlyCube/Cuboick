@@ -2,7 +2,6 @@ import { up, down, left, right, mouseDown, mX, mY } from "./input.js";
 import { hasTimeElasped } from "./util/clock.js";
 import { drawCube, drawTile } from "./util/graphics.js";
 import { createButton } from "./util/button.js";
-import { Vec3 } from "./util/mathutil.js";
 
 let forward, strafe;
 let x = 0, y = 0, z = 0;
