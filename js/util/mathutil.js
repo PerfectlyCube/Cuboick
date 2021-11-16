@@ -56,4 +56,12 @@ export class Vec3 {
 
     }
 
+    set add(x, y, z) {
+
+        this.x += x;
+        this.y += y;
+        this.z += z;
+
+    }
+
 }
