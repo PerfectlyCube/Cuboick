@@ -30,11 +30,11 @@ function loop() {
     g.fillStyle = "#dfdfdf";
     g.fillRect(0, 0, width, height);
 
-    for(let ty = 0; ty < height/50; ty++) {
+    for(let tz = 0; tz < height/50; tz++) {
 
         for(let tx = 0; tx < width/50; tx++) {
 
-            drawTile(tx*50, ty*50, "909090", canvas);
+            drawTile(tx*50 + ty*25, ty*25, "909090", canvas);
     
         }
 
