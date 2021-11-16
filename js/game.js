@@ -1,4 +1,4 @@
-import { up, down, left, right } from "input.js";
+import { up, down, left, right } from "./input.js";
 
 let forward, strafe;
 let x = 100, y = 0, z = 100;
