@@ -2,8 +2,8 @@
 
 const canvas = document.createElement("canvas");
 
-const width = window.innerWidth - 800;
-const height = window.innerHeight - 600;
+const width = window.innerWidth - 800/4;
+const height = window.innerHeight - 600/4;
 
 canvas.setAttribute("width", width);
 canvas.setAttribute("height", height);
