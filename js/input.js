@@ -37,27 +37,50 @@ addEventListener("keyup", (e) => { keyinput(false, e) });
 addEventListener("mousedown",(e) => { mouseinput(true, e) });
 addEventListener("mouseup", (e) => { mouseinput(false, e) });
 
-document.getElementById("left").addEventListener("click", (e) => {
+document.getElementById("left").addEventListener("mousedown", (e) => {
 
     left = true;
+
+});
+
+document.getElementById("left").addEventListener("mouseup", (e) => {
+
     left = false;
 
-})
-document.getElementById("up").addEventListener("click", (e) => {
+});
+
+document.getElementById("up").addEventListener("mousedown", (e) => {
 
     up = true;
+
+});
+
+document.getElementById("up").addEventListener("mouseup", (e) => {
+
     up = false;
 
-})
-document.getElementById("down").addEventListener("click", (e) => {
+});
+
+document.getElementById("down").addEventListener("mousedown", (e) => {
 
     down = true;
+
+});
+
+document.getElementById("down").addEventListener("mouseup", (e) => {
+
     down = false;
 
-})
-document.getElementById("right").addEventListener("click", (e) => {
+});
+
+document.getElementById("right").addEventListener("mousedown", (e) => {
 
     right = true;
+
+});
+
+document.getElementById("right").addEventListener("mouseup", (e) => {
+
     right = false;
 
-})
+});
