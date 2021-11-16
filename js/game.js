@@ -9,8 +9,8 @@ let x = 0, y = 0, z = 0;
 
 const canvas = document.createElement("canvas");
 
-const width = window.innerWidth - 50 * 12;
-const height = window.innerHeight - 50 * 8;
+const width = 50 * 12;
+const height = 50 * 8;
 
 canvas.setAttribute("id", "screen");
 canvas.setAttribute("width", width);
