@@ -1,4 +1,7 @@
+import { up, down, left, right } from "input.js";
 
+let forward, strafe;
+let x = 100, y = 0, z = 100;
 
 const canvas = document.createElement("canvas");
 
@@ -13,10 +16,16 @@ const g = canvas.getContext('2d');
 
 function loop() {
 
+    forward = (up || down? (up? -1 : (down? 1 : 0)) : 0);
+    strafe = (left || right? (left? -1 : (right? 1 : 0)) : 0);
+
+    z += forward;
+    x += strafe;
+
     g.fillStyle = "#dfdfdf";
     g.fillRect(0, 0, width, height);
-    
-    drawCube(100, 100, "454545");
+
+    drawCube(x + z, y + z, "454545");
 
 }
 
