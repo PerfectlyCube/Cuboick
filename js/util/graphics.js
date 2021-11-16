@@ -1,3 +1,4 @@
+//Draws a cube.
 export function drawCube(x, y, color, canvas) {
 
     var g = canvas.getContext('2d');
@@ -16,6 +17,7 @@ export function drawCube(x, y, color, canvas) {
 
 }
 
+//Draws a top of a cube, as a tile.
 export function drawTile(x, y, color, canvas) {
 
     var g = canvas.getContext('2d');
