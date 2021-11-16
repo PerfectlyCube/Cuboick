@@ -1,4 +1,4 @@
-const g = document.getElementById("screen");
+const g = document.getElementById("screen").getContext('2d');
 
 export function drawCube(x, y, color) {
 

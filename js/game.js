@@ -14,7 +14,7 @@ canvas.setAttribute("id", "screen");
 canvas.setAttribute("width", width);
 canvas.setAttribute("height", height);
 
-document.body.append(canvas);
+document.append(canvas);
 
 const g = canvas.getContext('2d');
 
