@@ -1,4 +1,5 @@
 import { up, down, left, right } from "./input.js";
+import { hasTimeElasped } from "./util/clock.js";
 
 let forward, strafe;
 let x = 100, y = 0, z = 100;
@@ -16,8 +17,8 @@ const g = canvas.getContext('2d');
 
 function loop() {
 
-    forward = (up || down? (up? -1 : (down? 1 : 0)) : 0);
-    strafe = (left || right? (left? -1 : (right? 1 : 0)) : 0);
+    forward = ((up || down) && hasTimeElasped(1000/10, true)? (up? -1 : (down? 1 : 0)) : 0);
+    strafe = ((left || right) && hasTimeElasped(1000/10, true)? (left? -1 : (right? 1 : 0)) : 0);
 
     z += forward * 25;
     x += strafe * 50;
