@@ -33,7 +33,7 @@ function loop() {
     drawTile(50, 50, "909090", canvas);
     drawCube(x - z, y + z, "454545", canvas);
 
-    createButton(10, 10, 10, 10, ["454545", "9090af"], canvas, mouseDown, mX, mY);
+    createButton(10, height - 20, 10, 10, ["454545", "9090af"], canvas, mouseDown, mX, mY);
 
 }
 
