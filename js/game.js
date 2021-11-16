@@ -33,7 +33,7 @@ function loop() {
 
     for(let ty = 0; ty < height/50; ty++) {
 
-        for(let tx = 0; tx < width/50; tx++)
+        for(let tx = 0; tx < width/50; tx++) {
 
             drawTile(tx*50, ty*50, "909090", canvas);
     
@@ -42,8 +42,6 @@ function loop() {
     }
 
     drawCube(x - z, y + z, "454545", canvas);
-
-    createButton(10, height - 20, 10, 10, ["454545", "9090af"], canvas, mouseDown, mX, mY);
 
 }
 
