@@ -2,7 +2,7 @@ import { up, down, left, right } from "./input.js";
 import { hasTimeElasped } from "./util/clock.js";
 
 let forward, strafe;
-let x = 100, y = 0, z = 100;
+let x = 0, y = 0, z = 0;
 
 const canvas = document.createElement("canvas");
 
@@ -26,7 +26,7 @@ function loop() {
     g.fillStyle = "#dfdfdf";
     g.fillRect(0, 0, width, height);
 
-    drawCube(x + z, y + z, "454545");
+    drawCube(x - z, y + z, "454545");
 
 }
 
