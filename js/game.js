@@ -1,4 +1,4 @@
-import { up, down, left, right } from "./input.js";
+import { up, down, left, right, mouseDown, mX, mY } from "./input.js";
 import { hasTimeElasped } from "./util/clock.js";
 import { drawCube, drawTile } from "./util/graphics.js";
 import { createButton } from "./util/button.js";
@@ -21,7 +21,7 @@ const g = canvas.getContext('2d');
 
 function loop() {
 
-    forward = ((up || downu) && hasTimeElasped(1000/50, true)? (up? -1 : (down? 1 : 0)) : 0);
+    forward = ((up || down) && hasTimeElasped(1000/50, true)? (up? -1 : (down? 1 : 0)) : 0);
     strafe = ((left || right) && hasTimeElasped(1000/50, true)? (left? -1 : (right? 1 : 0)) : 0);
 
     z += forward * 25;
@@ -32,6 +32,8 @@ function loop() {
 
     drawTile(50, 50, "909090", canvas);
     drawCube(x - z, y + z, "454545", canvas);
+
+    createButton(10, 10, 10, 10, ["454545", "9090af"], canvas, mouseDown, mX, mY);
 
 }
 

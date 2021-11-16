@@ -1,6 +1,4 @@
-import { mouseDown, mX, mY } from "../input.js"
-
-export function createButton(x, y, width, height, colors, canvas) {
+export function createButton(x, y, width, height, colors, canvas, mouseDown, mx, my) {
 
     var g = canvas.getContext('2d');
     var hovered = (mX >= x && mY >= y && mX <= x + width && mY <= y + height);
