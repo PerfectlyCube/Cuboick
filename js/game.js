@@ -30,7 +30,7 @@ function loop() {
     g.fillRect(0, 0, width, height);
 
     drawCube(x - z, y + z, "454545", canvas);
-    drawTile(x - z, y + z, "a5a5a5", canvas);
+    drawTile(x - z, y + z, "909090", canvas);
 
 }
 

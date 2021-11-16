@@ -29,7 +29,7 @@ export function drawTile(x, y, color, canvas) {
     g.lineTo(75 + x, 0 + y);
     g.lineTo(50 + x, 25 + y);
     g.lineTo(0 + x, 25 + y);
-    g.lineTo(25 + x, 25 + y);
+    g.lineTo(25 + x, 0 + y);
     g.fill();
 
 }
