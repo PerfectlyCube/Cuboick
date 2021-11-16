@@ -34,7 +34,7 @@ function loop() {
 
         for(let tx = 0; tx < width/50; tx++) {
 
-            drawTile(tx*50 + ty*25, ty*25, "909090", canvas);
+            drawTile(tx*50 + tz*25, tz*25, "909090", canvas);
     
         }
 
