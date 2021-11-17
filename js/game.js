@@ -31,9 +31,9 @@ function loop() {
     g.fillStyle = "#dfdfdf";
     g.fillRect(0, 0, width, height);
 
-    for(let tz = 0; tz < height/50; tz++) {
+    for(let tz = 0; tz < height/25; tz++) {
 
-        for(let tx = 0; tx < width/50; tx++) {
+        for(let tx = 0; tx < width/25; tx++) {
 
             drawTile(tx*50 + tz*25, tz*25, "909090", canvas);
     
