@@ -25,6 +25,11 @@ function mouseinput(toggle, e) {
         mX = e.clientX();
         mY = e.clientY();
 
+        right = e.movementX > 0;
+        left = e.movementX < 0;
+        up = e.movementY < 0;
+        down = e.movementY > 0;
+
     }
 
     mouseDown = toggle;
